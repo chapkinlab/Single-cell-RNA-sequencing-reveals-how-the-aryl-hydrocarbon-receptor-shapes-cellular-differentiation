@@ -1,4 +1,4 @@
-load ../data/cleandata_sce.mat
+load cleandata_sce.mat
 [c,cL]=grp2idx(sce.c_cell_type_tx);
 a1=grpstats((sce.c_batch_id),c,@(x)sum(x==1));
 a2=grpstats((sce.c_batch_id),c,@(x)sum(x==2));
